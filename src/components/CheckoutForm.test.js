@@ -39,9 +39,9 @@ test('shows success message on submit with form details', async () => {
 		const stateDisplay = screen.queryByText(/union/i);
 		const zipDisplay = screen.queryByText(/92398/i);
 
-		expect(firstNameDisplay).not.toBeInTheDocument();
+		expect(firstNameDisplay).toBeInTheDocument();
 		expect(lastNameDisplay).toBeInTheDocument();
-		expect(addressDisplay).toBeInTheDocument();
+		expect(addressDisplay).toBeInTheDsocument();
 		expect(cityDisplay).toBeInTheDocument();
 		expect(stateDisplay).toBeInTheDocument();
 		expect(zipDisplay).toBeInTheDocument();
